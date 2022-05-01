@@ -1,0 +1,59 @@
+//Salena Bower
+//2.7.19
+//Chapter 3 Programming Challenge 1: Employee Class
+
+public class SBEmployee
+{
+   private String name;
+   private double IDNumber;
+   private String department;
+   private String position;
+   
+   public Employee(String n, double num, String depart, String pos)
+   {
+      name = n;
+      IDNumber = num;
+      department = depart;
+      position = pos;
+   }
+   
+   public void setName(String n)
+   {
+      name = n;
+   }
+   
+   public void setIDNumber(double num)
+   {
+      IDNumber = num;
+   }
+   
+   public void setDepartment(String depart)
+   {
+      department = depart;
+   }
+   
+   public void setPosition(String pos)
+   {
+      position = pos;
+   }
+   
+   public String getName()
+   {
+      return name;
+   }
+   
+   public double getIDNumber()
+   {
+      return IDNumber;
+   }
+   
+   public String getDepartment()
+   {
+      return department;
+   }
+   
+   public String getPosition()
+   {
+      return position;
+   }
+}
