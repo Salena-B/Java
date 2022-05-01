@@ -1,0 +1,14 @@
+//Salena Bower
+//2.7.19
+//Test Scores Driver
+
+public class SBTestScoresDriver
+{
+   public static void main(String[] args)
+   {
+      SBTestScores scores = new SBTestScores(86.5, 93, 76.5);
+      System.out.println("Score 1: " + scores.getScoreOne() + "\nScore 2: " + scores.getScoreTwo());
+      System.out.println("Score 3: " + scores.getScoreThree() + "\n");
+      System.out.printf("Average of test scores is: %.2f", scores.getAverage());
+   }
+}
