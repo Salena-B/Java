@@ -1,0 +1,17 @@
+//Salena Bower
+//2.7.19
+//Payroll driver
+
+public class SBPayrollDriver
+{
+   public static void main(String[] args)
+   {
+      SBPayroll PR1 = new SBPayroll("Billy", "47937", 12.5, 56.2);
+      System.out.println("Name: " + PR1.getName() + "\nID Number: " + PR1.getID());
+      System.out.printf("Gross Pay: $%.2f\n", PR1.getGrossPay());
+      
+      SBPayroll PR2 = new SBPayroll("Linda", "28964", 11.25, 35.75);
+      System.out.println("\nName: " + PR2.getName() + "\nID Number: " + PR2.getID());
+      System.out.printf("Gross Pay: $%.2f\n", PR2.getGrossPay());
+   }
+}
