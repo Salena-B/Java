@@ -1,0 +1,31 @@
+//Salena Bower
+//2.12.19
+//Chapter 3 Programming Challenge 11: Patient Charges
+
+public class SBPatientDriver
+{
+   public static void main(String[] args)
+   {
+      //create instances of patient and procedures
+      SBPatient person = new SBPatient("Susan","Mae","Long","123 Basic Ave","Simpleton","PA","12345","123-456-7890","Karen","908-765-4321");
+      SBProcedure one = new SBProcedure("Physical Exam","02.12.19","Dr. Irvine",250.00);
+      SBProcedure two = new SBProcedure("X-ray","2.12.19","Dr. Jamison",500.00);
+      SBProcedure three = new SBProcedure("Blood Test","02.12.19","Dr. Smith",200.00);
+      //Print patient info
+      System.out.println("First Name: " + person.getFirst() + "\nMiddle Name: " + person.getMiddle() + "\nLast Name: " + person.getLast());
+      System.out.println("Address: " + person.getStreet() + " " + person.getcity() + " " + person.getState() + ", " + person.getZIP());
+      System.out.println("Phone Number: " + person.getPhone());
+      System.out.println("Emergency Contact: " + person.getEmergencyName() + "\nEmergency Number: " + person.getEmergencyPhone());
+      //Print procedures
+      System.out.println("\nProcedure 1" + "\nProcedure Name: " + one.getProcedure() + "\nDate: " + one.getDate() + "\nPractitioner: " + one.getName());
+      System.out.printf("Charge: $%.2f\n", one.getCharge());
+      
+      System.out.println("\nProcedure 2" + "\nProcedure Name: " + two.getProcedure() + "\nDate: " + two.getDate() + "\nPractitioner: " + two.getName());
+      System.out.printf("Charge: $%.2f\n", two.getCharge());
+      
+      System.out.println("\nProcedure 3" + "\nProcedure Name: " + three.getProcedure() + "\nDate: " + three.getDate() + "\nPractitioner: " + three.getName());
+      System.out.printf("Charge: $%.2f\n", three.getCharge());
+      
+      System.out.printf("\nTotal Charges: $%.2f", one.getCharge() + two.getCharge() + three.getCharge());
+   }
+}
