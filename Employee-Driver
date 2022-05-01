@@ -1,0 +1,26 @@
+//Salena Bower
+//2.7.19
+//Employee class driver
+
+public class SBEmployeeDriver
+{
+   public static void main(String[] args)
+   {
+   //Create first Employee instance
+      Employee one = new Employee("Susan Meyers", 47899, "Accounting", "Vice President");
+      System.out.println("Name: " + one.getName());
+      System.out.printf("ID Number: %5d\n", (int)one.getIDNumber());
+      System.out.println("Department: " + one.getDepartment() + "\nPosition: " + one.getPosition());
+      //Create second Employee instance
+      Employee two = new Employee("Mark Jones", 39119, "IT", "Programmer");
+      System.out.println("\nName: " + two.getName());
+      System.out.printf("ID Number: %5d\n", (int)two.getIDNumber());
+      System.out.println("Department: " + two.getDepartment() + "\nPosition: " + two.getPosition());
+      //Create third Employee instance
+      Employee three = new Employee("Joy Rogers", 81774, "Manufacturing", "Engineer");
+      System.out.println("\nName: " + three.getName());
+      System.out.printf("ID Number: %5d\n", (int)three.getIDNumber());
+      System.out.println("Department: " + three.getDepartment() + "\nPosition: " + three.getPosition());
+   }
+}
+   
