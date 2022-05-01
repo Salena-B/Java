@@ -1,0 +1,28 @@
+//Salena Bower
+//2.7.19
+//Car class driver
+public class SBCarDriver
+{
+   public static void main(String[] args)
+   {
+   //Create first Employee instance
+      Car one = new Car("2009 Chevrolet", "Cobolt", 0);
+      System.out.println("Year Model: " + one.getYearModel() + "\nMake: " + one.getMake());
+      System.out.println("Current speed: " + one.getSpeed() + " mph");
+      //Accelerates 5 times
+      System.out.println("\nCar is accelerating");
+      System.out.println("Current speed: " + one.getAccelerate() + " mph");
+      System.out.println("Current speed: " + one.getAccelerate() + " mph");
+      System.out.println("Current speed: " + one.getAccelerate() + " mph");
+      System.out.println("Current speed: " + one.getAccelerate() + " mph");
+      System.out.println("Current speed: " + one.getAccelerate() + " mph");
+      //Brakes 5 times
+      System.out.println("\nCar is deccelerating");
+      System.out.println("Current speed: " + one.getBrake() + " mph");
+      System.out.println("Current speed: " + one.getBrake() + " mph");
+      System.out.println("Current speed: " + one.getBrake() + " mph");
+      System.out.println("Current speed: " + one.getBrake() + " mph");
+      System.out.println("Current speed: " + one.getBrake() + " mph");
+   }
+}
+   
