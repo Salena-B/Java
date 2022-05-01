@@ -1,0 +1,59 @@
+//Salena Bower
+//2.7.19
+//Chapter 3 Programming Challenge 1: Employee Class
+
+public class SBCar
+{
+   private String yearModel;
+   private String make;
+   private double speed;
+   
+   public Car(String year, String m, double s)
+   {
+      yearModel = year;
+      make = m;
+      speed = s;
+   }
+   
+   public void setYearModel(String year)
+   {
+      yearModel = year;
+   }
+   
+   public void setMake(String m)
+   {
+      make = m;
+   }
+   
+   public void setSpeed(double s)
+   {
+      speed = s;
+   }
+   
+   public String getYearModel()
+   {
+      return yearModel;
+   }
+   
+   public String getMake()
+   {
+      return make;
+   }
+   
+   public double getSpeed()
+   {
+      return speed;
+   }
+   
+   public double getAccelerate()
+   {
+      speed += 5;
+      return speed;
+   }
+   
+   public double getBrake()
+   {
+      speed -= 5;
+      return speed;
+   }
+}
