@@ -1,0 +1,64 @@
+//Salena Bower
+//2.7.19
+//Chapter 3 Programming Exercise 6: Payroll Class
+
+public class SBPayroll
+{
+   private String EmpName;
+   private String IDNumber;
+   private double PayRate;
+   private double HoursWorked;
+   
+   public SBPayroll(String name, String IDnum, double pay, double hours)
+   {
+      EmpName = name;
+      IDNumber = IDnum;
+      PayRate = pay;
+      HoursWorked = hours;
+   }
+   
+   public void setName(String name)
+   {
+      EmpName = name;
+   }
+   
+   public void setID(String IDnum)
+   {
+      IDNumber = IDnum;
+   }
+   
+   public void setPayRate(double pay)
+   {
+      PayRate = pay;
+   }
+   
+   public void setHoursWorked(double hours)
+   {
+      HoursWorked = hours;
+   }
+   
+   public String getName()
+   {
+      return EmpName;
+   }
+   
+   public String getID()
+   {
+      return IDNumber;
+   }
+   
+   public double getPayRate()
+   {
+      return PayRate;
+   }
+   
+   public double getHoursWorked()
+   {
+      return HoursWorked;
+   }
+   
+   public double getGrossPay()
+   {
+      return (PayRate * HoursWorked);
+   }
+}
