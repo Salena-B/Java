@@ -1,0 +1,111 @@
+//Salena Bower
+//2.12.19
+//Chapter 3 Programming Challenge 11: Patient Changes
+
+public class SBPatient
+{
+   private String fName;
+   private String mName;
+   private String lName;
+   private String StreetAddress;
+   private String city;
+   private String state;
+   private String ZIPCode;
+   private String phoneNumber;
+   private String EmergencyName;
+   private String EmergencyPhone;
+   
+   public SBPatient(String fn, String mn, String ln, String SA, String C, String S, String ZC, String PN, String EN, String EP)
+   {
+      fName = fn;
+      mName = mn;
+      lName = ln;
+      StreetAddress = SA;
+      city = C;
+      state = S;
+      ZIPCode = ZC;
+      phoneNumber = PN;
+      EmergencyName = EN;
+      EmergencyPhone = EP;
+   }
+   public void setFirst(String fn)
+   {
+      fName = fn;
+   }
+   public void setMiddle(String mn)
+   {
+      mName = mn;
+   }
+   public void setLast(String ln)
+   {
+      lName = ln;
+   }
+   public void setStreet(String SA)
+   {
+      StreetAddress = SA;
+   }
+   public void setCity(String C)
+   {
+      city = C;
+   }
+   public void setState(String S)
+   {
+      state = S;
+   }
+   public void setZIP(String ZC)
+   {
+      ZIPCode = ZC;
+   }
+   public void setPhone(String PN)
+   {
+      phoneNumber = PN;
+   }
+   public void setEmergencyName(String EN)
+   {
+      EmergencyName = EN;
+   }
+   public void setEmergencyPhone(String EP)
+   {
+      EmergencyPhone = EP;
+   }
+   public String getFirst()
+   {
+      return fName;
+   }
+   public String getMiddle()
+   {
+      return mName;
+   }
+   public String getLast()
+   {
+      return lName;
+   }
+   public String getStreet()
+   {
+      return StreetAddress;
+   }
+   public String getcity()
+   {
+      return city;
+   }
+   public String getState()
+   {
+      return state;
+   }
+   public String getZIP()
+   {
+      return ZIPCode;
+   }
+   public String getPhone()
+   {
+      return phoneNumber;
+   }
+   public  String getEmergencyName()
+   {
+      return EmergencyName;
+   }
+   public String getEmergencyPhone()
+   {
+      return EmergencyPhone;
+   }
+}
