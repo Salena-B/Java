@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+//Salena Bower
+//2.5.19
+//Chapter 2 Programming Challenge 13: Restaurant Bill
+
+public class SBRestaurantBill
+{
+   public static void main(String[] args)
+   {
+      float meal;
+      float tax;
+      float tip;
+      float total;
+      
+      
+      //Gets input
+      Scanner keyboard = new Scanner(System.in);
+      System.out.print("Enter the charge for the meal: $");
+      meal = keyboard.nextFloat();
+      
+      //Calculates components of bill
+      tax = (meal * (float).075);
+      tip = (meal * (float).18);
+      total = (meal + tax + tip);
+      
+      //Prints info to user
+      System.out.printf("\nMeal Charge: $%.2f\n", meal);
+      System.out.printf("7.5 percent Tax: $%.2f\n", tax);
+      System.out.printf("18 percent Tip: $%.2f\n", tip);
+      System.out.printf("Total Charge: $%.2f\n", total);
+   }
+}
