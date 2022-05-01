@@ -1,0 +1,52 @@
+//Salena Bower
+//2.7.19
+//Chapter 3 Programming Exercise 8: Test Scores Class
+
+public class SBTestScores
+{
+   private double ScoreOne;
+   private double ScoreTwo;
+   private double ScoreThree;
+   
+   public SBTestScores(double TestOne, double TestTwo, double TestThree)
+   {
+      ScoreOne = TestOne;
+      ScoreTwo = TestTwo;
+      ScoreThree = TestThree;
+   }
+   
+   public void setScoreOne(double TestOne)
+   {
+      ScoreOne = TestOne;
+   }
+   
+   public void setScoreTwo(double TestTwo)
+   {
+      ScoreTwo = TestTwo;
+   }
+   
+   public void setScoreThree(double TestThree)
+   {
+      ScoreThree = TestThree;
+   }
+   
+   public double getScoreOne()
+   {
+      return ScoreOne;
+   }
+   
+   public double getScoreTwo()
+   {
+      return ScoreTwo;
+   }
+   
+   public double getScoreThree()
+   {
+      return ScoreThree;
+   }
+   
+   public double getAverage()
+   {
+      return ((ScoreOne + ScoreTwo + ScoreThree)/3);
+   }
+}
