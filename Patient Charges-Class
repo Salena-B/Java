@@ -1,0 +1,51 @@
+//Salena Bower
+//2.12.19
+//Chapter 3 Programming Challenge 11: Patient Charges
+
+public class SBProcedure
+{
+   private String procedure;
+   private String date;
+   private String name;
+   private double charge;
+   
+   public SBProcedure(String P, String D, String N, double C)
+   {
+      procedure = P;
+      date = D;
+      name = N;
+      charge = C;
+   }
+   public void setProcedure(String P)
+   {
+      procedure = P;
+   }
+   public void setDate(String D)
+   {
+      date = D;
+   }
+   public void setName(String N)
+   {
+      name = N;
+   }
+   public void setCharge(double C)
+   {
+      charge = C;
+   }
+   public String getProcedure()
+   {
+      return procedure;
+   }
+   public String getDate()
+   {
+      return date;
+   }
+   public String getName()
+   {
+      return name;
+   }
+   public double getCharge()
+   {
+      return charge;
+   }
+}
