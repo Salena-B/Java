@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+//Salena Bower
+//2.5.19
+//Chapter 2 Programming Challenge 15: Ingredient Adjuster
+
+public class SBIngredientAdjuster
+{
+   public static void main(String[] args)
+   {
+      float sugar = (float)1.5;
+      float butter = (float)1.0;
+      float flour = (float)2.75;
+      float cookies;
+      
+      //Gets number of cookies from user and divides by 48 for conversion 
+      Scanner keyboard = new Scanner(System.in);
+      System.out.print("How many cookies would you like to make? ");
+      cookies = (keyboard.nextFloat() / (float)48);
+      
+      //Converts ingredients to new amount
+      sugar *= cookies;
+      butter *= cookies;
+      flour *= cookies;
+      cookies *= 48;
+      
+      //Displays ingredients for users amount of cookies
+      System.out.printf("\nTo make %d cookies you need: \n", (int)cookies);
+      System.out.printf("\n\t%.2f cups of sugar", sugar);
+      System.out.printf("\n\t%.2f cups of butter", butter);
+      System.out.printf("\n\t%.2f cups of flour", flour);
+   }
+}
